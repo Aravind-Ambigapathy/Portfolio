@@ -3,12 +3,19 @@ import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
 import { useState } from "react";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
   },
 });
+
+const Container = styled(Box)(({ theme }) => ({
+  backgroundColor: theme.palette.background.default,
+  color: theme.palette.text.primary,
+}));
 
 export default function Home() {
   const [testimonials, setTestimonials] = useState([
@@ -28,7 +35,7 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <div className="max-w-7xl mx-auto p-4 bg-gray-900 text-white">
+      <Container className="max-w-7xl mx-auto p-4">
         <main className="w-full flex flex-col gap-8">
           <BlogListingPage />
           <section className="flex flex-col gap-16">
@@ -64,7 +71,11 @@ export default function Home() {
         <footer className="bg-gray-700 p-4 text-white mt-8">
           &copy; 2023 Your Company
         </footer>
-      </div>
+      </Container>
     </ThemeProvider>
   );
 }
+```
+
+```bash
+npm install @mui/material @emotion/react @emotion/styled
