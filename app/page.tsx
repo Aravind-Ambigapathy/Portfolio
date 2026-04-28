@@ -1,11 +1,11 @@
 import Layout from '../layout';
 
-const Page = () => {
+const HomePage = () => {
   return (
     <Layout>
-      <h1>Welcome to our page</h1>
+      <h1>Welcome to my app!</h1>
     </Layout>
   );
 };
 
-export default Page;
+export default HomePage;

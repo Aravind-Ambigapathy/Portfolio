@@ -1,12 +1,24 @@
-import Navbar from '../components/Navbar';
-import Testimonials from '../components/Testimonials';
+import Link from 'next/link';
+import Head from 'next/head';
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Navbar />
+      <Head>
+        <title>My App</title>
+      </Head>
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main>{children}</main>
-      <Testimonials />
     </div>
   );
 };

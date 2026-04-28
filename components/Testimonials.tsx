@@ -1,27 +1,10 @@
-import Testimonial from './Testimonial';
+import Layout from '@layouts';
 
 const Testimonials = () => {
   return (
-    <section className="testimonials">
-      <h2>What our customers say</h2>
-      <div className="testimonials__container">
-        <Testimonial
-          name="John Doe"
-          image="https://via.placeholder.com/150"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."
-        />
-        <Testimonial
-          name="Jane Doe"
-          image="https://via.placeholder.com/150"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."
-        />
-        <Testimonial
-          name="Bob Smith"
-          image="https://via.placeholder.com/150"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."
-        />
-      </div>
-    </section>
+    <Layout>
+      <h1>Testimonials</h1>
+    </Layout>
   );
 };
 

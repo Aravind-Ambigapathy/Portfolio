@@ -1,22 +1,18 @@
-import styles from './Navbar.module.css';
+import Link from 'next/link';
+import { Navbar } from '@layouts';
 
-const Navbar = () => {
+const NavbarComponent = () => {
   return (
-    <nav className={styles.navbar}>
+    <Navbar>
       <ul>
         <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
       </ul>
-      <button>Log In</button>
-    </nav>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavbarComponent;
