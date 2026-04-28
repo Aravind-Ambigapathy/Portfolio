@@ -1,8 +1,3 @@
-bash
-npm install @mui/material @emotion/react @emotion/styled @mui/styled-engine-react
-```
-
-```tsx
 'use client'
 import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
@@ -62,7 +57,7 @@ export default function Home() {
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-gray-800 p-8 rounded-lg shadow-md w-full md:w-1/3"
+                  className="bg-gray-900 p-8 rounded-lg shadow-md w-full md:w-1/3"
                 >
                   <Typography variant="h6" className="text-lg font-bold text-white">{testimonial.name}</Typography>
                   <Typography variant="body1" className="">{testimonial.text}</Typography>
@@ -73,12 +68,12 @@ export default function Home() {
               <input
                 type="search"
                 placeholder="Search Blog or Testimonial"
-                className="bg-gray-800 border border-gray-500 text-gray-300 text-sm rounded-lg focus:ring-white focus:border-white block w-full p-2.5"
+                className="bg-gray-900 border border-gray-500 text-gray-300 text-sm rounded-lg focus:ring-white focus:border-white block w-full p-2.5"
               />
             </div>
             <div className="flex justify-center mt-8">
               <button
-                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+                className="bg-gray-600 hover:bg-gray-700 text-gray-200 font-bold py-2 px-4 rounded"
               >
                 Read More
               </button>
@@ -86,7 +81,7 @@ export default function Home() {
           </section>
           {/* <Portfolio /> */}
         </main>
-        <footer className="bg-gray-800 p-4 text-white mt-8">
+        <footer className="bg-gray-900 p-4 text-white mt-8">
           &copy; 2023 Your Company
         </footer>
       </Container>
