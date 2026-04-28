@@ -1,4 +1,4 @@
-typescript
+
 import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
 import { motion } from "framer-motion";
@@ -50,13 +50,4 @@ export default function Home() {
       </main>
     </div>
   );
-}
-
-/* Global CSS Variables */
-:root {
-  --primary: #3498db;
-  --primary-dark: #2c3e50;
-  --secondary: #f1c40f;
-  --gray-200: #e5e5ea;
-  --gray-600: #666;
 }
