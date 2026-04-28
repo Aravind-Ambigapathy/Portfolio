@@ -44,7 +44,9 @@ export default function Home() {
             />
           </div>
           <div className="flex justify-center mt-8">
-            <button className="bg-primary hover:bg-primary-dark text-black font-bold py-2 px-4 rounded">
+            <button
+              className="bg-dark-blue hover:bg-dark-blue-dark text-white font-bold py-2 px-4 rounded"
+            >
               Read More
             </button>
           </div>
