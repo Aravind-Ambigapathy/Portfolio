@@ -1,4 +1,3 @@
-typescript
 'use client'
 import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
