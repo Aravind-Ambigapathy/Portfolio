@@ -16,7 +16,7 @@ export default function Home() {
     },
     {
       name: "Client 3",
-      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      text: "I am changed",
     },
   ]);
 
@@ -33,7 +33,9 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-primary-dark p-8 rounded-lg shadow-md w-full md:w-1/3"
+                className={`bg-primary-dark p-8 rounded-lg shadow-md w-full md:w-1/3 ${
+                  index === 2 ? "text-gray-200" : ""
+                }`}
               >
                 <p className="text-2xl font-bold text-white">{testimonial.name}</p>
                 <p className="text-gray-100">{testimonial.text}</p>
