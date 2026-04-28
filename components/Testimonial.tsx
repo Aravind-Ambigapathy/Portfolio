@@ -1,22 +1,17 @@
-import { FC } from 'react';
+import styles from './Testimonial.module.css';
 
-interface TestimonialProps {
-  active: boolean;
-  setActive: (index: number) => void;
-  testimonial: {
-    name: string;
-    quote: string;
-  };
+interface Props {
+  name: string;
+  image: string;
+  text: string;
 }
 
-const Testimonial: FC<TestimonialProps> = ({ active, setActive, testimonial }) => {
+const Testimonial = ({ name, image, text }: Props) => {
   return (
-    <div
-      className={`testimonial ${active ? 'active' : ''}`}
-      onClick={() => setActive(testimonials.indexOf(testimonial))}
-    >
-      <p>{testimonial.quote}</p>
-      <p>{testimonial.name}</p>
+    <div className={styles.testimonial}>
+      <img src={image} alt={name} />
+      <p>{text}</p>
+      <p>- {name}</p>
     </div>
   );
 };

@@ -7,9 +7,27 @@ import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Typography } from '@mui/material';
 
+const Container = styled(Box)(({ theme }) => ({
+  backgroundColor: theme.palette.background.default,
+  color: theme.palette.text.primary,
+}));
+
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
+    primary: {
+      main: '#333',
+    },
+    secondary: {
+      main: '#666',
+    },
+    background: {
+      default: '#333',
+    },
+    text: {
+      primary: '#fff',
+      secondary: '#ccc',
+    },
   },
   components: {
     MuiTypography: {
@@ -17,18 +35,13 @@ const darkTheme = createTheme({
         {
           props: { variant: 'h2' },
           style: {
-            color: 'yellow',
+            color: '#fff',
           },
         },
       ],
     },
   },
 });
-
-const Container = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.background.default,
-  color: theme.palette.text.primary,
-}));
 
 export default function Home() {
   const [testimonials, setTestimonials] = useState([
@@ -52,7 +65,7 @@ export default function Home() {
         <main className="w-full flex flex-col gap-8">
           <BlogListingPage />
           <section className="flex flex-col gap-16">
-            <Typography variant="h2" className="text-4xl font-bold text-yellow-500">Testimonials</Typography>
+            <Typography variant="h2" className="text-4xl font-bold text-white">Testimonials</Typography>
             <div className="flex flex-col gap-8 md:flex-row md:gap-16">
               {testimonials.map((testimonial, index) => (
                 <div
