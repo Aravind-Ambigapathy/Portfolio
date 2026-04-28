@@ -2,7 +2,6 @@ typescript
 'use client'
 import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
-import { useState } from "react";
 
 export default function Home() {
   const [testimonials, setTestimonials] = useState([

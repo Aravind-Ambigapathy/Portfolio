@@ -1,3 +1,4 @@
+typescript
 'use client'
 import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
@@ -44,6 +45,9 @@ export default function Home() {
         </section>
         {/* <Portfolio /> */}
       </main>
+      <footer className="bg-dark-blue p-4 text-white mt-8">
+        &copy; 2023 Your Company
+      </footer>
     </div>
   );
 }
