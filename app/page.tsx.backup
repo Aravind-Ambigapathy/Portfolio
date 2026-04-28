@@ -1,3 +1,4 @@
+typescript
 'use client'
 import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
@@ -35,6 +36,13 @@ export default function Home() {
                 <p className="">{testimonial.text}</p>
               </div>
             ))}
+          </div>
+          <div className="flex justify-center mt-8">
+            <input
+              type="search"
+              placeholder="Search Blog or Testimonial"
+              className="bg-gray-100 border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            />
           </div>
           <div className="flex justify-center mt-8">
             <button className="bg-primary hover:bg-primary-dark text-black font-bold py-2 px-4 rounded">
