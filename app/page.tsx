@@ -23,9 +23,9 @@ export default function Home() {
     <div className="max-w-7xl mx-auto p-4 bg-white text-blue-900">
       <main className="w-full flex flex-col gap-8">
         <BlogListingPage />
-        <section className="flex flex-col gap-8">
-          <h2 className="text-3xl font-bold text-primary">Testimonials</h2>
-          <div className="flex flex-col gap-4 md:flex-row md:gap-8">
+        <section className="flex flex-col gap-16">
+          <h2 className="text-4xl font-bold text-primary">Testimonials</h2>
+          <div className="flex flex-col gap-8 md:flex-row md:gap-16">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
