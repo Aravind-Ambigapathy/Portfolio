@@ -6,15 +6,15 @@ import { useState } from "react";
 export default function Home() {
   const [testimonials, setTestimonials] = useState([
     {
-      name: "Client 1",
+      name: "Card1",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      name: "Client 2",
+      name: "Card2",
       text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
-      name: "Client 3",
+      name: "Card3",
       text: "I am changed",
     },
   ]);
