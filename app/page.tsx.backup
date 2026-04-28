@@ -1,3 +1,8 @@
+bash
+npm install @mui/material @emotion/react @emotion/styled @mui/styled-engine-react
+```
+
+```tsx
 'use client'
 import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
@@ -5,10 +10,23 @@ import { useState } from "react";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { Typography } from '@mui/material';
 
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
+  },
+  components: {
+    MuiTypography: {
+      variants: [
+        {
+          props: { variant: 'h2' },
+          style: {
+            color: 'yellow',
+          },
+        },
+      ],
+    },
   },
 });
 
@@ -39,15 +57,15 @@ export default function Home() {
         <main className="w-full flex flex-col gap-8">
           <BlogListingPage />
           <section className="flex flex-col gap-16">
-            <h2 className="text-4xl font-bold text-yellow-500">Testimonials</h2>
+            <Typography variant="h2" className="text-4xl font-bold text-yellow-500">Testimonials</Typography>
             <div className="flex flex-col gap-8 md:flex-row md:gap-16">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-gray-700 p-8 rounded-lg shadow-md w-full md:w-1/3"
+                  className="bg-gray-800 p-8 rounded-lg shadow-md w-full md:w-1/3"
                 >
-                  <p className="text-lg font-bold text-white">{testimonial.name}</p>
-                  <p className="">{testimonial.text}</p>
+                  <Typography variant="h6" className="text-lg font-bold text-white">{testimonial.name}</Typography>
+                  <Typography variant="body1" className="">{testimonial.text}</Typography>
                 </div>
               ))}
             </div>
@@ -55,7 +73,7 @@ export default function Home() {
               <input
                 type="search"
                 placeholder="Search Blog or Testimonial"
-                className="bg-gray-700 border border-gray-500 text-gray-300 text-sm rounded-lg focus:ring-white focus:border-white block w-full p-2.5"
+                className="bg-gray-800 border border-gray-500 text-gray-300 text-sm rounded-lg focus:ring-white focus:border-white block w-full p-2.5"
               />
             </div>
             <div className="flex justify-center mt-8">
@@ -68,14 +86,10 @@ export default function Home() {
           </section>
           {/* <Portfolio /> */}
         </main>
-        <footer className="bg-gray-700 p-4 text-white mt-8">
+        <footer className="bg-gray-800 p-4 text-white mt-8">
           &copy; 2023 Your Company
         </footer>
       </Container>
     </ThemeProvider>
   );
 }
-```
-
-```bash
-npm install @mui/material @emotion/react @emotion/styled
