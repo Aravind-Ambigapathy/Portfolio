@@ -15,7 +15,7 @@ export default function Home() {
     },
     {
       name: "Client 3",
-      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      text: "I am changed",
     },
   ]);
 
