@@ -55,6 +55,10 @@ const Testimonials = () => {
     setShowMore(!showMore);
   };
 
+  const handleLoadMore = () => {
+    setShowMore(true);
+  };
+
   return (
     <section className="testimonials">
       <h2>What our customers say</h2>
@@ -67,14 +71,22 @@ const Testimonials = () => {
             text={testimonial.text}
           />
         ))}
+        {showMore && testimonials.slice(3, testimonials.length).map((testimonial, index) => (
+          <Testimonial
+            key={index + 3}
+            name={testimonial.name}
+            image={testimonial.image}
+            text={testimonial.text}
+          />
+        ))}
+        {!showMore && (
+          <button className="show-more" onClick={handleLoadMore}>
+            Read more
+          </button>
+        )}
         {showMore && (
           <button className="show-more" onClick={handleShowMore}>
             Show less
-          </button>
-        )}
-        {!showMore && (
-          <button className="show-more" onClick={handleShowMore}>
-            Read more
           </button>
         )}
       </div>
