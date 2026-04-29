@@ -6,3 +6,22 @@
 .testimonials__container.show-more {
   max-height: 500px;
 }
+
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialText {
+  margin-bottom: 10px;
+}
+
+.testimonialAuthor {
+  font-size: 14px;
+  color: #666;
+}
