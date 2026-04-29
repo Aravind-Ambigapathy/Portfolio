@@ -34,10 +34,25 @@ const Testimonials = () => {
       image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
+    {
+      name: 'John Doe',
+      image: 'https://via.placeholder.com/150',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
+    {
+      name: 'Jane Doe',
+      image: 'https://via.placeholder.com/150',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
+    {
+      name: 'Bob Smith',
+      image: 'https://via.placeholder.com/150',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
   ];
 
   const handleShowMore = () => {
-    setShowMore(true);
+    setShowMore(!showMore);
   };
 
   return (
