@@ -42,7 +42,7 @@ const Testimonials = () => {
     <section className="testimonials">
       <h2>What our customers say</h2>
       <div className="testimonials__container">
-        <div className={styles.testimonials__row}>
+        <div className={`testimonials__row`}>
           {testimonials.slice(0, showMore ? testimonials.length : 6).map((testimonial, index) => (
             <Testimonial
               key={index}
@@ -52,7 +52,7 @@ const Testimonials = () => {
           ))}
         </div>
         {showMore && testimonials.slice(6, testimonials.length).map((testimonial, index) => (
-          <div key={index + 6} className={styles.testimonials__row}>
+          <div key={index + 6} className={`testimonials__row`}>
             <Testimonial
               key={index + 6}
               name={testimonial.name}
