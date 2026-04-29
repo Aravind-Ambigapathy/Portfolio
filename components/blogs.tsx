@@ -12,10 +12,6 @@ export default function BlogListingPage() {
     return (
         <div className='min-h-screen bg-slate-50 text-black p-6 md:p-10'>
             <div className='mx-auto'>
-                <div className='mb-2 flex flex-col md:flex-row gap-4 md:items-center md:justify-between'>
-                    <div><h1 className='text-4xl font-bold'>Blogs</h1><p className='text-slate-600 mt-2'>Insights, tutorials, and developer resources.</p></div>
-                    <input placeholder='Search blogs...' className='rounded-2xl border px-4 py-2 bg-white shadow-sm' />
-                </div>
                 <div className="blogs-container">
                     <div className="mx-auto">
                         <div className="mb-2 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
