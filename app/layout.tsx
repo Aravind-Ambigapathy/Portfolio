@@ -1,32 +1,14 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import styles from '../globals.css';
+import Navbar from '../components/Navbar';
 
-function Layout({ children }) {
+const Layout = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Testimonial</title>
-      </Head>
-      <header className={styles.header}>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/projects">
-                <a>Projects</a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>{children}</main>
+    <div>
+      <Navbar />
+      <main>
+        {/* rest of the code remains the same */}
+      </main>
     </div>
   );
-}
+};
 
 export default Layout;

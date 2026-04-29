@@ -1,11 +1,12 @@
-import Layout from '../layout';
+import Navbar from '../components/Navbar';
 
-const HomePage = () => {
+const Page = () => {
   return (
-    <Layout>
-      <h1>Welcome to my website!</h1>
-    </Layout>
+    <div>
+      <Navbar />
+      {/* rest of the code remains the same */}
+    </div>
   );
 };
 
-export default HomePage;
+export default Page;

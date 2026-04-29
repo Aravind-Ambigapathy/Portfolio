@@ -1,14 +1,14 @@
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Testimonial.module.css';
 
-function Testimonial() {
+const Testimonial = () => {
   return (
     <div className={styles.testimonial}>
-      <h2>Testimonial</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
-      </p>
+      <h2>Projects</h2>
+      {/* rest of the code remains the same */}
     </div>
   );
-}
+};
 
 export default Testimonial;
