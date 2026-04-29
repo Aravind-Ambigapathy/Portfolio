@@ -1,25 +1,14 @@
 import styles from './Testimonial.module.css';
 
-interface TestimonialProps {
-  name: string;
-  position: string;
-  text: string;
-}
-
-const Testimonial = ({ name, position, text }: TestimonialProps) => {
+function Testimonial() {
   return (
     <div className={styles.testimonial}>
-      <blockquote>
-        <p>{text}</p>
-        <footer>
-          <cite>
-            {name} <br />
-            {position}
-          </cite>
-        </footer>
-      </blockquote>
+      <h2>Testimonial</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+      </p>
     </div>
   );
-};
+}
 
 export default Testimonial;
