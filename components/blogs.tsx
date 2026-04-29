@@ -23,13 +23,8 @@ export default function BlogListingPage() {
                         <div className='mt-4 flex items-center justify-between text-sm'><span>{blog.date}</span><button className='px-3 py-1 rounded-xl bg-slate-900 text-white'>Read</button></div>
                     </div>)}
                 </div>
-                <style jsx>{`
-                  .blogs-container {
-                    max-height: calc(100vh - 200px);
-                    overflow-y: auto;
-                  }
-                `}</style>
             </div>
+            <div className='mt-4 md:mt-6'></div>
         </div>
     );
 }

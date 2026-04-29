@@ -1,3 +1,8 @@
+'use client'
+import BlogListingPage from "@/components/blogs";
+import Portfolio from "@/components/mypage";
+import { useState } from "react";
+
 export default function Home() {
   const [testimonials, setTestimonials] = useState([
     {
@@ -17,9 +22,7 @@ export default function Home() {
   return (
     <div className="mx-auto p-4 bg-white text-blue-900">
       <main className="w-full flex flex-col gap-8">
-        <div className="blogs-container">
-          <BlogListingPage />
-        </div>
+        <BlogListingPage />
         <section className="flex flex-col gap-8">
           <h2 className="text-3xl font-bold text-primary">Testimonials</h2>
           <div className="flex flex-col gap-4 md:flex-row md:gap-8">
