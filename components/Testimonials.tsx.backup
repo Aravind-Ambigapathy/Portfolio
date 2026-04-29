@@ -6,32 +6,26 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: 'John Doe',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Jane Doe',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Bob Smith',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Alice Johnson',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Mike Brown',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Emma Davis',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
   ];
@@ -52,7 +46,6 @@ const Testimonials = () => {
           <Testimonial
             key={index}
             name={testimonial.name}
-            image={testimonial.image}
             text={testimonial.text}
           />
         ))}
@@ -60,7 +53,6 @@ const Testimonials = () => {
           <Testimonial
             key={index + 6}
             name={testimonial.name}
-            image={testimonial.image}
             text={testimonial.text}
           />
         ))}
