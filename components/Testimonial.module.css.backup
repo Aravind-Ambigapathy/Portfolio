@@ -8,14 +8,18 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial img {
+.testimonialImg {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
-.testimonial p {
+.testimonialText {
+  margin-bottom: 10px;
+}
+
+.testimonialAuthor {
   margin-bottom: 10px;
 }
 
