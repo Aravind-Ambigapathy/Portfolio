@@ -9,7 +9,6 @@ interface Props {
 const Testimonial = ({ name, image, text }: Props) => {
   return (
     <div className={styles.testimonial}>
-      <img src={image} alt={name} />
       <p>{text}</p>
       <p>- {name}</p>
     </div>

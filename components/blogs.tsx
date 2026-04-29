@@ -9,7 +9,7 @@ export default function BlogListingPage() {
         { title: 'API Integration Best Practices', excerpt: 'Reliable data fetching, caching, and error handling.', category: 'API', date: 'Apr 2026' },
         { title: 'Frontend Interview Prep Roadmap', excerpt: 'Key topics and projects to crack frontend interviews.', category: 'Career', date: 'Apr 2026' }];
     return <div className='min-h-screen bg-slate-50 text-black p-6 md:p-10'>
-        <div className='max-w-6xl mx-auto'>
+        <div className=' mx-auto'>
             <div className='mb-8 flex flex-col md:flex-row gap-4 md:items-center md:justify-between'>
                 <div><h1 className='text-4xl font-bold'>Latest Blogs</h1><p className='text-slate-600 mt-2'>Insights, tutorials, and developer resources.</p></div>
                 <input placeholder='Search blogs...' className='rounded-2xl border px-4 py-2 bg-white shadow-sm' /></div>
