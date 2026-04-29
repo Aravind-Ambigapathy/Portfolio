@@ -1,6 +1,6 @@
 'use client'
 import BlogListingPage from "@/components/blogs";
-import Portfolio from "@/components/mypage";
+// import Portfolio from "@/components/mypage";
 import Testimonial from "@/components/Testimonial";
 import { useState } from "react";
 
@@ -40,7 +40,7 @@ export default function Home() {
             </button>
           </div>
         </section>
-        <Portfolio />
+        {/* <Portfolio /> */}
       </main>
     </div>
   );
