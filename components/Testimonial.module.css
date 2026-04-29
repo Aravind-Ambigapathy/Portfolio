@@ -35,3 +35,8 @@
 .show-more:hover {
   background-color: #3e8e41;
 }
+
+.testimonials__container {
+  max-height: 300px;
+  overflow-y: auto;
+}
