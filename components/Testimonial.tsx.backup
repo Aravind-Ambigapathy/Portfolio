@@ -1,16 +1,20 @@
 import styles from './Testimonial.module.css';
 
-interface Props {
+interface TestimonialProps {
   name: string;
-  image: string;
-  text: string;
+  position: string;
+  quote: string;
 }
 
-const Testimonial = ({ name, image, text }: Props) => {
+const Testimonial = ({ name, position, quote }: TestimonialProps) => {
   return (
     <div className={styles.testimonial}>
-      <p>{text}</p>
-      <p>- {name}</p>
+      <img src="/window.svg" alt={name} />
+      <div className={styles.testimonialContent}>
+        <div className={styles.name}>{name}</div>
+        <div className={styles.position}>{position}</div>
+        <div className={styles.quote}>{quote}</div>
+      </div>
     </div>
   );
 };

@@ -3,18 +3,21 @@ import styles from './Testimonial.module.css';
 interface TestimonialProps {
   name: string;
   position: string;
-  quote: string;
+  text: string;
 }
 
-const Testimonial = ({ name, position, quote }: TestimonialProps) => {
+const Testimonial = ({ name, position, text }: TestimonialProps) => {
   return (
     <div className={styles.testimonial}>
-      <img src="/window.svg" alt={name} />
-      <div className={styles.testimonialContent}>
-        <div className={styles.name}>{name}</div>
-        <div className={styles.position}>{position}</div>
-        <div className={styles.quote}>{quote}</div>
-      </div>
+      <blockquote>
+        <p>{text}</p>
+        <footer>
+          <cite>
+            {name} <br />
+            {position}
+          </cite>
+        </footer>
+      </blockquote>
     </div>
   );
 };
