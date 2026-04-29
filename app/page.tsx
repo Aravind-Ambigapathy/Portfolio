@@ -1,20 +1,24 @@
 'use client'
 import BlogListingPage from "@/components/blogs";
 import Portfolio from "@/components/mypage";
+import Testimonial from "@/components/Testimonial";
 import { useState } from "react";
 
 export default function Home() {
   const [testimonials, setTestimonials] = useState([
     {
       name: "Client 1",
+      image: "",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       name: "Client 2",
+      image: "",
       text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       name: "Client 3",
+      image: "",
       text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
   ]);
@@ -27,13 +31,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-primary">Testimonials</h2>
           <div className="flex flex-col gap-4 md:flex-row md:gap-8">
             {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-secondary p-8 rounded-lg shadow-md w-full md:w-1/3"
-              >
-                <p className="text-lg font-bold text-black">{testimonial.name}</p>
-                <p className="">{testimonial.text}</p>
-              </div>
+              <Testimonial key={index} name={testimonial.name} image={testimonial.image} text={testimonial.text} />
             ))}
           </div>
           <div className="flex justify-center mt-8">
@@ -42,7 +40,7 @@ export default function Home() {
             </button>
           </div>
         </section>
-        {/* <Portfolio /> */}
+        <Portfolio />
       </main>
     </div>
   );
