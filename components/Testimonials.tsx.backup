@@ -16,6 +16,14 @@ const Testimonials = () => {
       name: 'Bob Smith',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
+    {
+      name: 'Alice Johnson',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
+    {
+      name: 'Mike Brown',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
   ];
 
   const handleShowMore = () => {
