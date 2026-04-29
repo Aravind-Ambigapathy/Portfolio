@@ -6,32 +6,26 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: 'John Doe',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Jane Doe',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Bob Smith',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Alice Johnson',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Mike Brown',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Emma Davis',
-      image: 'https://via.placeholder.com/150',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
   ];
@@ -48,21 +42,23 @@ const Testimonials = () => {
     <section className="testimonials">
       <h2>What our customers say</h2>
       <div className="testimonials__container">
-        {testimonials.slice(0, showMore ? testimonials.length : 6).map((testimonial, index) => (
-          <Testimonial
-            key={index}
-            name={testimonial.name}
-            image={testimonial.image}
-            text={testimonial.text}
-          />
-        ))}
+        <div className={styles.testimonials__row}>
+          {testimonials.slice(0, showMore ? testimonials.length : 6).map((testimonial, index) => (
+            <Testimonial
+              key={index}
+              name={testimonial.name}
+              text={testimonial.text}
+            />
+          ))}
+        </div>
         {showMore && testimonials.slice(6, testimonials.length).map((testimonial, index) => (
-          <Testimonial
-            key={index + 6}
-            name={testimonial.name}
-            image={testimonial.image}
-            text={testimonial.text}
-          />
+          <div key={index + 6} className={styles.testimonials__row}>
+            <Testimonial
+              key={index + 6}
+              name={testimonial.name}
+              text={testimonial.text}
+            />
+          </div>
         ))}
         {!showMore && (
           <button className="show-more" onClick={handleLoadMore}>
