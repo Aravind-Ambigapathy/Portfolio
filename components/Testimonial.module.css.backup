@@ -25,3 +25,8 @@
   font-size: 14px;
   color: #666;
 }
+
+.testimonialTitle {
+  font-size: 18px;
+  color: yellow;
+}
