@@ -41,7 +41,7 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials">
-      <h2>Testimonial</h2>
+      <h2>Test blogs</h2>
       <div className="testimonials__container">
         {testimonials.slice(0, showMore ? testimonials.length : 3).map((testimonial, index) => (
           <Testimonial

@@ -1,9 +1,9 @@
 import Testimonial from './Testimonial';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Testimonials = () => {
   const [showMore, setShowMore] = useState(false);
-  const [testimonials, setTestimonials] = useState([
+  const testimonials = [
     {
       name: 'John Doe',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
@@ -24,20 +24,15 @@ const Testimonials = () => {
       name: 'Mike Brown',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
-  ]);
+  ];
 
   const handleShowMore = () => {
     setShowMore(!showMore);
   };
 
-  useEffect(() => {
-    const fetchTestimonials = async () => {
-      const response = await fetch('/api/testimonials');
-      const data = await response.json();
-      setTestimonials(data);
-    };
-    fetchTestimonials();
-  }, []);
+  const handleLoadMore = () => {
+    setShowMore(true);
+  };
 
   return (
     <section className="testimonials">
