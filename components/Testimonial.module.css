@@ -30,3 +30,17 @@
   font-size: 18px;
   color: blue;
 }
+
+.testimonials {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
