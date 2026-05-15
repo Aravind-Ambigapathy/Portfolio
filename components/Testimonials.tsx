@@ -9,15 +9,7 @@ const Testimonials = () => {
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
-      name: 'Jane Doe',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
-    },
-    {
       name: 'Bob Smith',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
-    },
-    {
-      name: 'Alice Johnson',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
@@ -41,7 +33,7 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials">
-      <h2>Test blogs</h2>
+      <h2>Testimonials</h2>
       <div className="testimonials__container">
         {testimonials.slice(0, showMore ? testimonials.length : 3).map((testimonial, index) => (
           <Testimonial
@@ -58,7 +50,7 @@ const Testimonials = () => {
           />
         ))}
         {!showMore && (
-          <button className="show-more" onClick={handleLoadMore}>
+          <button className="show-more" onClick={handleShowMore}>
             Read more
           </button>
         )}
