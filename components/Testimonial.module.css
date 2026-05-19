@@ -48,3 +48,12 @@
 .testimonials__container {
   grid-template-columns: repeat(4, 1fr);
 }
+
+.testimonials__container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.testimonials__container.show-more {
+  max-height: 600px;
+}
