@@ -27,4 +27,12 @@ const Testimonials = () => {
       name: 'David Lee',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
+    {
+      name: 'Sarah Taylor',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
+    {
+      name: 'Kevin White',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
   ]);
