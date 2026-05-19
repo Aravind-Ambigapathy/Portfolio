@@ -13,19 +13,11 @@ const Testimonials = () => {
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
-      name: 'Jane Doe',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
-    },
-    {
-      name: 'Tom Johnson',
+      name: 'Emily Chen',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
     {
       name: 'Gokul E',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
-    },
-    {
-      name: 'Emily Chen',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
   ]);
@@ -47,16 +39,16 @@ const Testimonials = () => {
     <section className="testimonials">
       <h2>Testimonials</h2>
       <div className="testimonials__container">
-        {testimonials.slice(0, showMore ? testimonials.length : 5).map((testimonial, index) => (
+        {testimonials.slice(0, showMore ? testimonials.length : 4).map((testimonial, index) => (
           <Testimonial
             key={index}
             name={testimonial.name}
             text={testimonial.text}
           />
         ))}
-        {showMore && testimonials.slice(5, testimonials.length).map((testimonial, index) => (
+        {showMore && testimonials.slice(4, testimonials.length).map((testimonial, index) => (
           <Testimonial
-            key={index + 5}
+            key={index + 4}
             name={testimonial.name}
             text={testimonial.text}
           />
