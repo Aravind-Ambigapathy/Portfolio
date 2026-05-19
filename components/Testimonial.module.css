@@ -9,7 +9,7 @@
 
 .testimonial {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -56,4 +56,8 @@
 
 .testimonials__container.show-more {
   max-height: 600px;
+}
+
+.testimonial {
+  grid-template-columns: repeat(4, 1fr);
 }
