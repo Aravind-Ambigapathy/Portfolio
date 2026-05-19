@@ -20,6 +20,10 @@ const Testimonials = () => {
       name: 'Tom Johnson',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
+    {
+      name: 'Gokul E',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
   ]);
 
   const handleShowMore = () => {
