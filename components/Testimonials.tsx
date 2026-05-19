@@ -1,4 +1,5 @@
-// Removed the testimonial with name 'Gokul E'
+import { useState } from 'react';
+
 const Testimonials = () => {
   const [showMore, setShowMore] = useState(false);
   const [testimonials, setTestimonials] = useState([
@@ -16,6 +17,14 @@ const Testimonials = () => {
     },
     {
       name: 'Tom Johnson',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
+    {
+      name: 'Emily Davis',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
+    },
+    {
+      name: 'David Lee',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
   ]);
