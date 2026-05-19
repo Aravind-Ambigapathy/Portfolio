@@ -24,10 +24,6 @@ const Testimonials = () => {
       name: 'Emily Davis',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
     },
-    {
-      name: 'John Doe',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.',
-    },
   ]);
 
   const handleShowMore = () => {
